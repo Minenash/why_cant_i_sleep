@@ -29,7 +29,7 @@ public class BedBlockMixin {
     @Unique
     private static BlockPos blockPos = null;
     
-    @Inject(method = "method_19283",
+    @Inject(method = "method_55767",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;sendMessage(Lnet/minecraft/text/Text;Z)V"))
     private static void thingy(PlayerEntity player, PlayerEntity.SleepFailureReason reason, CallbackInfo info) {
         if (reason != PlayerEntity.SleepFailureReason.NOT_SAFE)
@@ -55,7 +55,7 @@ public class BedBlockMixin {
     }
     
     @Inject(method = "onUse", at = @At("HEAD"))
-    public void onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult result,
+    public void onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit,
                       CallbackInfoReturnable<ActionResult> info) {
         blockPos = pos;
     }
