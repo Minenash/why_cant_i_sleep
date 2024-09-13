@@ -1,6 +1,6 @@
 # Monsters in the Closet
 
-This is a pretty simple **fabric** mod that highlights the mobs that prevent you from sleeping. To avoid it being exploitative, it'll only highlight the mobs if the message you get would be "Can't sleep now; monsters near by", and it only highlights for 3 seconds.
+This is a pretty simple **Fabric** and [**NeoForge**](https://github.com/Minenash/Monsters-In-The-Closet-Forge) mod that highlights the mobs that prevent you from sleeping. To avoid it being exploitative, it'll only highlight the mobs if the message you get would be "Can't sleep now; monsters near by", and it only highlights for 3 seconds.
 
 <br>
 
